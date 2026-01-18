@@ -74,7 +74,8 @@ spawn-at-startup "/usr/bin/mate-polkit"
 // spawn-at-startup "pikabar"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "systemctl" "--user" "enable" "--now" "hypridle"
-//spawn-at-startup "swww-daemon"
+spawn-at-startup "/usr/bin/syncthingtray" "--single-instance" "--wait"
+spawn-at-startup "flatpak" "run" "org.fkoehler.KTailctl"
 
 environment {
     LD_PRELOAD ""
