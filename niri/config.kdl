@@ -10,6 +10,7 @@ input {
     touchpad {
         tap
         natural-scroll
+        disabled-on-external-mouse
     }
 
     mouse {
@@ -31,6 +32,11 @@ output "eDP-1" {
     scale 1.25
     transform "normal"
     variable-refresh-rate on-demand=true
+}
+
+cursor {
+  xcursor-theme "Bibata-Modern-Ice"
+  xcursor-size 24
 }
 
 layout {
@@ -94,6 +100,8 @@ environment {
      _JAVA_AWT_WM_NONREPARENTING "1"
     ELECTRON_OZONE_PLATFORM_HINT "auto"
     QT_QPA_PLATFORMTHEME "qt6ct"
+    XCURSOR_SIZE "24"
+    XCURSOR_THEME "Bibata-Modern-Ice"
     //nv __GL_VRR_ALLOWED "1"
     //nv __GL_GSYNC_ALLOWED "1"
 
