@@ -1,0 +1,4 @@
+LocalSend
+darktable
+Journey-Desktop
+wavebox
